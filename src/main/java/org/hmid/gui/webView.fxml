@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.web.WebView?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.hmid.gui.WebViewController">
+   <children>
+      <HBox layoutX="7.0" layoutY="-5.0" prefHeight="100.0" prefWidth="587.0" />
+      <Label layoutX="190.0" layoutY="14.0" text="Test d'une webView">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <WebView fx:id="webView" layoutX="23.0" layoutY="110.0" prefHeight="276.0" prefWidth="542.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="110.0" />
+      <Button fx:id="button" layoutX="17.0" layoutY="55.0" mnemonicParsing="false" onAction="#onClick" prefHeight="31.0" prefWidth="166.0" style="-fx-background-color: #33FFF9;" text="Afficher le site de geramin" />
+      <Button fx:id="btn2" layoutX="359.0" layoutY="55.0" mnemonicParsing="false" onAction="#btn2" prefHeight="31.0" prefWidth="221.0" style="-fx-background-color: #96FF33;" text="Afficher un site excuté avec javascript" />
+      <ProgressIndicator fx:id="progressCercle" layoutX="300.0" layoutY="54.0" progress="0.0" visible="false" />
+      <ProgressBar fx:id="progressBar" layoutX="190.0" layoutY="69.0" prefHeight="10.0" prefWidth="96.0" progress="0.0" visible="false" />
+   </children>
+</AnchorPane>
